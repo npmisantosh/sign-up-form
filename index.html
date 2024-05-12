@@ -6,34 +6,43 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="/leaf.jpg" width="30%" height="100%" />
     <div id="main">
-      <p>
-        This is not a real online service! You know you neeed something like
-        this in tour life to help you realize your deepest dreams<br />Sign up
-        now to get started.<br />You know you want to.
-      </p>
-      <p>Let's do this!</p>
-      <form action="whatever">
-        <div class="formitem">
-          <label>First name</label><input type="text" />
+      <div id="hero">
+        <div id="logodiv">
+          <img src="/odin-lined.png" width="50px" height="50px" />
+          <p id="logotext">ODIN</p>
         </div>
-        <div class="formitem">
-          <label>Last name</label> <input type="text" />
-        </div>
-        <div class="formitem"><label>Email</label> <input type="text" /></div>
-        <div class="formitem">
-          <label>Phone Number</label> <input type="text" />
-        </div>
-        <div class="formitem">
-          <label>Password</label> <input type="text" />
-        </div>
-        <div class="formitem">
-          <label>Confirm password</label> <input type="text" />
-        </div>
-        <button>Create Account</button>
-      </form>
-      <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+      <div id="content">
+        <p>
+          This is not a real online service! You know you need something like
+          this in tour life to help you realize your deepest dreams<br />Sign up
+          now to get started.<br />You know you want to.
+        </p>
+        <p>Let's do this!</p>
+        <form action="whatever">
+          <fieldset>
+            <label for="first">First name</label>
+            <input id="first" placeholder="Santosh" type="text" />
+            <label for="last">Last name</label>
+            <input id="last" placeholder="Humagain" type="text" />
+          </fieldset>
+          <fieldset>
+            <label for="email">Email</label>
+            <input placeholder="Example@gmail.com" id="email" type="email" />
+            <label for="phone">Phone Number</label>
+            <input placeholder="9879879871" id="phone" type="phone" />
+          </fieldset>
+          <fieldset>
+            <label for="password">Password</label>
+            <input placeholder="*******" id="password" type="password" />
+            <label for="cpassword">Confirm password</label>
+            <input placeholder="*******" id="cpassword" type="text" />
+          </fieldset>
+          <button>Create Account</button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
     </div>
   </body>
 </html>
