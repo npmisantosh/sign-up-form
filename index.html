@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Sign up</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div id="main">
@@ -22,22 +23,34 @@
         <p>Let's do this!</p>
         <form action="whatever">
           <fieldset>
-            <label for="first">First name</label>
-            <input id="first" placeholder="Santosh" type="text" />
-            <label for="last">Last name</label>
-            <input id="last" placeholder="Humagain" type="text" />
+            <div id="item">
+              <label for="first">First name</label>
+              <input id="first" placeholder="Odin" type="text" />
+            </div>
+            <div id="item">
+              <label for="last">Last name</label>
+              <input id="last" placeholder="Odin" type="text" />
+            </div>
           </fieldset>
           <fieldset>
-            <label for="email">Email</label>
-            <input placeholder="Example@gmail.com" id="email" type="email" />
-            <label for="phone">Phone Number</label>
-            <input placeholder="9879879871" id="phone" type="phone" />
+            <div id="item">
+              <label for="email">Email</label>
+              <input placeholder="Example@gmail.com" id="email" type="email" />
+            </div>
+            <div id="item">
+              <label for="phone">Phone Number</label>
+              <input placeholder="9879879871" id="phone" type="phone" />
+            </div>
           </fieldset>
           <fieldset>
-            <label for="password">Password</label>
-            <input placeholder="*******" id="password" type="password" />
-            <label for="cpassword">Confirm password</label>
-            <input placeholder="*******" id="cpassword" type="text" />
+            <div id="item">
+              <label for="password">Password</label>
+              <input placeholder="*******" id="password" type="password" />
+            </div>
+            <div id="item">
+              <label for="cpassword">Confirm password</label>
+              <input placeholder="*******" id="cpassword" type="password" />
+            </div>
           </fieldset>
           <button>Create Account</button>
         </form>

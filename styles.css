@@ -12,6 +12,16 @@ button{
 label{
     text-transform: uppercase;
 }
+#item{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+fieldset{
+    display: flex;
+    flex-direction: row;
+}
+
 #main{
     display: flex;
     flex-direction: row;
@@ -21,8 +31,9 @@ label{
 #hero{
     position: relative;
     background-image: url(/leaf.jpg);
-    min-width: 45vh;
-    width: 45vh;
+    background-size: contain;
+    min-width: 50vh;
+    width: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -49,8 +60,14 @@ p{
 }
 input:invalid {
     border-color: red;
-  }
+}
   
-  input:valid {
+input:valid {
     border-color: green;
-  }
+}
+input:focus {
+    border-color: rgb(0, 15, 128);
+}
+input {
+    border: rgb(47, 47, 47)
+}
