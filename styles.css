@@ -31,7 +31,7 @@ fieldset{
 }
 #hero{
     position: relative;
-    background-image: url(/leaf.jpg);
+    background-image: url(https://raw.githubusercontent.com/npmisantosh/sign-up-form/main/leaf.jpg);
     background-size: contain;
     min-width: 50vh;
     width: 50vh;
